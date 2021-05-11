@@ -7,7 +7,10 @@
 
 import Foundation
 import OpenSSL
-import CryptoTokenKit
+
+#if canImport(CryptoKit)
+    import CryptoTokenKit
+#endif
 
 @available(iOS 13, macOS 10.15, *)
 public class OpenSSLUtils {
