@@ -8,7 +8,7 @@
 import Foundation
 import OpenSSL
 
-#if canImport(CryptoKit)
+#if canImport(CryptoTokenKit)
     import CryptoTokenKit
 #endif
 
