@@ -9,8 +9,11 @@
 import Foundation
 import CommonCrypto
 
-#if canImport(CryptoKit)
+#if canImport(CryptoTokenKit)
     import CryptoTokenKit
+#endif
+
+#if canImport(CryptoKit)
     import CryptoKit
 #endif
 
