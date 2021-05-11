@@ -7,7 +7,11 @@
 
 import Foundation
 import OpenSSL
-import CryptoTokenKit
+
+#if canImport(CryptoTokenKit)
+    import CryptoTokenKit
+#endif
+
 
 #if !os(macOS)
 import CoreNFC
